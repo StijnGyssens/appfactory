@@ -96,6 +96,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  position: relative;
 }
 
 .left,
@@ -118,7 +119,7 @@ footer {
   content: "<";
   font-size: 60px;
   color: grey;
-  font-family: lato;
+  font-family: "Lato";
 }
 
 .right {
@@ -128,4 +129,79 @@ footer {
 
 .right::after {
   content: ">";
+}
+
+.container h2 {
+  font-family: "Lato";
+  color: #666d89;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 60px 0 20px 0;
+}
+
+.container p {
+  font-family: "Lato";
+  color: #767e9e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-bottom: 35px;
+}
+
+.services section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.services section article {
+  flex-basis: 350px;
+  flex-grow: 1;
+  position: relative;
+  padding-left: 80px;
+}
+
+.services section article::after {
+  content: "\e900";
+  font-family: "icons";
+  font-size: 60px;
+  color: #767e9e;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.services section article:nth-child(2):after {
+  content: "\e901";
+}
+
+.services section article:nth-child(3):after {
+  content: "\e902";
+}
+
+.services section article:nth-child(4):after {
+  content: "\e903";
+}
+
+.services section article:nth-child(5):after {
+  content: "\e904";
+}
+
+.services section article:nth-child(6):after {
+  content: "\e905";
+}
+
+.services section h3 {
+  font-family: "Lato";
+  color: #666d89;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.services section p {
+  font-family: "Lato";
+  color: #767e9e;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21px;
 }
