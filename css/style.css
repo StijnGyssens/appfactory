@@ -89,3 +89,43 @@ footer {
   margin: 0 auto;
   min-height: 10px;
 }
+
+.slider .container {
+  height: 550px;
+  background-image: url("../image/slide.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.left,
+.right {
+  display: block;
+  width: 60px;
+  height: 60px;
+  opacity: 50%;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.left::after,
+.right::after {
+  content: "<";
+  font-size: 60px;
+  color: grey;
+  font-family: lato;
+}
+
+.right {
+  left: auto;
+  right: 0;
+}
+
+.right::after {
+  content: ">";
+}
