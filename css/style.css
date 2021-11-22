@@ -394,6 +394,11 @@ form input::placeholder {
   font-size: 12px;
 }
 
+.contact .formulier textarea {
+  height: 250px;
+  resize: none;
+}
+
 footer .container {
   display: flex;
   justify-content: space-between;
