@@ -67,10 +67,6 @@ nav a:hover {
   background-color: #f2f2f2;
 }
 
-.portfolio {
-  background-color: #2d2f3b;
-}
-
 .about {
   background-color: #f2f2f2;
 }
@@ -208,4 +204,79 @@ footer {
   font-size: 12px;
   font-weight: 300;
   line-height: 21px;
+}
+
+.portfolio {
+  background-color: #2d2f3b;
+  padding-bottom: 30px;
+}
+
+.portfolio ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.portfolio button {
+  white-space: nowrap;
+  background: none;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+  color: #767e9e;
+  font-size: 12px;
+  font-family: Lato;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.portfolio button:hover,
+.portfolio .active {
+  color: white;
+  border-color: white;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.images .imgHolder {
+  aspect-ratio: 1 / 1;
+  flex-basis: 250px;
+  flex-grow: 1;
+  border: 3px solid transparent;
+  transition: all 300ms;
+  cursor: pointer;
+  position: relative;
+}
+
+.images .imgHolder:hover {
+  border-color: white;
+  transform: scale(1.05);
+}
+
+.images .imgHolder::after {
+  content: "\e906";
+  font-family: icons;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  opacity: 0;
+  transition: all 300ms;
+  transition-delay: 300ms;
+}
+
+.images .imgHolder:hover:after {
+  opacity: 1;
+}
+
+.images .imgHolder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
