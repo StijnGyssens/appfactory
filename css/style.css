@@ -164,11 +164,14 @@ footer {
 .services section article::after {
   content: "\e900";
   font-family: "icons";
-  font-size: 60px;
+  font-size: 38px;
   color: #767e9e;
   position: absolute;
   left: 0;
   top: 0;
+  border: 2px solid #767e9e;
+  border-radius: 50%;
+  padding: 12px;
 }
 
 .services section article:nth-child(2):after {
@@ -196,6 +199,7 @@ footer {
   color: #666d89;
   font-size: 18px;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 
 .services section p {
